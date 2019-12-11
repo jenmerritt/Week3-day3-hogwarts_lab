@@ -1,23 +1,131 @@
 body {
-  padding: 30px;
-  font-family: 'Rye', cursive;
-  color: #ccad00;
-  background-image: url("/harry_potter.gif");
+  padding: 0 30px 30px 30px;
+  font-family: 'Playfair Display', serif;
+  color: #E1E0E2;
+  background-image: url("/castle.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  margin: 0;
 }
 
-a {
+h1{
+  font-weight:bold;
+  font-size: 50pt;
+  color: #E1E0E2;
+}
+
+.center {
+  text-align:center;
+}
+
+.student-buttons {
+  background-color: #ccad00;
+  font-family: 'Playfair Display', serif;
+  border: none;
+  color: #010217 !important;
+  padding: 16px 32px;
   text-decoration: none;
-  color: red;
+  font-size: 18pt;
 }
 
-a:hover {
-  color: darkred;
+.student-buttons:hover {
+  background-color: #010217;
+  font-family: 'Playfair Display', serif;
+  border: none;
+  color: #ccad00 !important;
+  padding: 16px 32px;
+  text-decoration: none !important;
+  font-size: 18pt;
+}
+
+#edit-student{
+  padding: 16px 45px !important;
+}
+
+#edit-student:hover{
+  padding: 16px 45px !important;
+}
+
+#main {
+  background-color: rgb(22, 34, 55, 0.7);
+  /* background-color: rgb(255, 255, 255, 0.2); */
+  border: solid 1px #ffffff;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  max-width:500px;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
+}
+
+#new-form {
+  padding: 40px;
+  font-size:18pt;
+}
+
+#edit-form {
+  padding: 40px;
+  font-size:18pt;
+}
+
+.form-item{
+  margin-bottom:25px;
+  margin-left: 15px;
+}
+
+input[type=text]{
+  width:200px;
+  height: 30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16pt;
+}
+
+input[type=number]{
+  width:200px;
+  height:30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16pt;
+}
+select {
+width: 150px;
+border: none;
+border-radius: 4px;
+background-color: #f1f1f1;
+font-size: 16pt;
+font-family: 'Playfair Display', serif;
+}
+
+#main p{
+  font-size:18pt;
+}
+
+#menu a{
+  color: #ccad00;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+#menu a:hover{
+  text-decoration: underline;
+  font-size: 16pt;
+}
+
+#main a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#main a:hover{
+  text-decoration: underline;
 }
 
 #menu {
-  width: 220px;
+  width: 280px;
   display: flex;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .menu-item {
@@ -34,7 +142,7 @@ a:hover {
 }
 .student {
   border: 5px double;
-  margin: 0 35px 30px 0;  
+  margin: 0 35px 30px 0;
   padding: 25px;
   width: 200px;
   display: inline-block;
@@ -43,6 +151,7 @@ a:hover {
 .form-el {
   margin: 10px 0;
 }
+
 
 .form-wrapper .form-el input[type="submit" i] {
   margin-left: 180px;

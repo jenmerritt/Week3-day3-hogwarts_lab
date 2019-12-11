@@ -1,11 +1,13 @@
-<p>First Name: <%= @student.first_name %></p>
-<p>Last Name: <%= @student.last_name %></p>
-<p>House: <%= @student_house_name%></p>
+<div id="main">
+<p>First Name: <%= @student.first_name.capitalize %></p>
+<p>Last Name: <%= @student.last_name.capitalize %></p>
+<p>House: <%= @student_house_name.capitalize%></p>
 <p>Age: <%= @student.age %></p>
 
 
-<p><a href = "/students/<%= @student.id %>/edit">Edit Student</a></p>
+<p><a href = "/students/<%= @student.id %>/edit" id="edit-student" class="student-buttons">Edit Student</a></p>
 
-<form class="" action="/students/<%= @student.id %>/delete" method="post">
-  <input type="submit" value="Delete Student">
+<form action="/students/<%= @student.id %>/delete" method="post">
+  <input type="submit" value="Delete Student" id="delete-submit" class="student-buttons">
 </form>
+</div>

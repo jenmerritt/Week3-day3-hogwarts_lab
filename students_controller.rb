@@ -59,5 +59,5 @@ end
 post '/students/:id/delete' do
   student = Student.find(params[:id])
   student.delete
-  redirect to '/students'
+  erb(:delete)
 end

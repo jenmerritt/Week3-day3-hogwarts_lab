@@ -1,3 +1,9 @@
+<div class="center">
+<h2>Hogwarts Student Directory</h2>
+<p>Select a student to view their full details and additional options.</p>
+</div>
+<div id="main">
 <% for student in @students %>
   <p><a href = "/students/<%= student.id%>"><%= student.format_name %></a></p>
 <% end %>
+</div>

@@ -1,18 +1,21 @@
-
-
-<form method="post" action="/students">
+<div id="main">
+<form method="post" action="/students" id="new-form">
 <label for="first-name">First Name</label>
-  <input type="text" name="first_name" id="first-name">
+  <input type="text" name="first_name" id="first-name" class="form-item">
+  <br>
 <label for="last-name">Last Name</label>
-  <input type="text" name="last_name" id="last-name">
+  <input type="text" name="last_name" id="last-name" class="form-item">
+  <br>
 <label for="house_select">Select House:</label>
-
-<select name="house_id" id="house_select">
+<select name="house_id" id="house_select" class="form-item">
   <% for house in @houses%>
-  <option value="<%=house.id%>"><%= house.name %></option>
+  <option value="<%=house.id%>"><%= house.name.capitalize %></option>
   <% end %>
 </select>
+<br>
 <label for="age">Age</label>
-  <input type="number" name="age" id="age" min="11">
-<input type="submit" value="Create Student">
+  <input type="number" name="age" id="age" min="11" class="form-item">
+  <br>
+<input type="submit" value="Create Student" class="student-buttons">
 </form>
+</div>
