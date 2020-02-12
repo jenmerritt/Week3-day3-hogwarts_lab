@@ -4,6 +4,8 @@ This project was completed during my time studying at CodeClan. This was a 2 hou
 
 The subject was Hogwarts and having a postgreSQL database of students, with CRUD actions.
 
+The project can be viewed at: http://jmm-ruby-school-lab.herokuapp.com/students
+
 Student List:
 ![Image of Student List](student-list.png)
 
@@ -16,6 +18,7 @@ Create Student:
 ## Approach:
 - Seed database and work through RESTful routes to firstly get the data and then gradually build up each route to be able to add / update / delete.
 - Following the lab, I did some additional CSS work to make it more presentable. Hogwarts was a fun topic for me so I enjoyed styling it up a bit!
+- I also deployed the app to Heroku.
 
 ## Challenges and Learnings:
 - Learning how to manipulate the :id params in the controller in order to edit a specific student was a key learning point for me, and I found the lab a useful exercise for practicing my understanding of this.
