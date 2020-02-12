@@ -1,8 +1,8 @@
 require('sinatra')
-require('sinatra/contrib/all')
+# require('sinatra/contrib/all')
 require_relative('models/student')
 require_relative('models/house')
-also_reload('./models/*')
+# also_reload('./models/*')
 
 
 # index
@@ -13,6 +13,7 @@ end
 
 
 # new
+# /students/new needs to be above /students/:id - coin slot thing. Small coin first (most precise/specific) then the catch all (/anything) last, otherwise /new will try fit into /:id and never get run. get and post can be distinguished by method so get /students can exist alongside post /students.
 
 get '/students/new' do
   @houses = House.all
